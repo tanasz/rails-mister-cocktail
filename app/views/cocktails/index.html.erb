@@ -1,0 +1,12 @@
+<h1>Cocktails list</h1>
+
+<ul class="list-group">
+  <li class='list-group-item disabled'>
+    <span class='name'>Cocktail name</span>
+  </li>
+  <% @cocktails.each do |cocktail| %>
+  <li class='list-group-item'>
+    <span class='name'><%= link_to cocktail.name, cocktail_path(cocktail) %></span>
+  </li>
+  <% end %>
+</ul>
