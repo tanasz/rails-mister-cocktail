@@ -1,30 +1,34 @@
 <h1><%= @cocktail.name %></h1>
-<hr>
-<%= render "doses/form", cocktail: @cocktail, dose: @dose %>
+      <%= cl_image_tag @cocktail.photo.url(:bright_face) %>
+
+      <hr>
+      <%= render "doses/form", cocktail: @cocktail, dose: @dose %>
 
 
-<ul>
-  <% @cocktail.doses.each do |dose| %>
-    <li>
-      <%= dose.ingredient.name %>: <%= dose.description %>
-      <%= link_to "&times;".html_safe, dose_path(dose), method: :delete, data: { confirm: "Are you sure?" } %>
-    </li>
+      <div class="row">
+      <% @cocktail.doses.each do |dose| %>
+        <div class="col-xs-12 col-sm-4">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('background.jpg');">
+            <div class="card-category">Ingredient</div>
+            <div class="card-description">
+              <h2><%= dose.ingredient.name %></h2>
+              <p><%= dose.description %></p>
+              <%= link_to "&times;".html_safe, dose_path(dose), method: :delete, data: { confirm: "Are you sure?" } %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+      </div>
+<%#------- yield balise title -------%>
+<% content_for(:title) do %><%= @cocktail.name %> on MisterCocktail<% end %>
+<%#------- yield meta description -------%>
+<% content_for(:description) do %>
+The <%= @cocktail.name %> is on MisterCocktail : just add
+  <% if @cocktail.ingredients.length > 1 %>
+    <% for i in 0..2 do %>
+    <%= @cocktail.ingredients.shuffle[i].name %>,
+    <% end %> and maybe more!
+  <% else %>
+  <%= "a few ingredients..." %>
   <% end %>
-</ul>
-
-
-
-
-<!--
-<% @cocktail.ingredients.each do |ingredient| %>
-<p><strong>Ingredient:</strong> (<%= ingredient.id %>) <%= ingredient.name %> <%= ingredient.doses %> </p>
 <% end %>
-
-
-<h2>
-  <%= @cocktail.name %>
-</h2> -->
-
-
-
-

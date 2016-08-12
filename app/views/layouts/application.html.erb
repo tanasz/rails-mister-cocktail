@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsMisterCocktail</title>
+    <title><%= yield(:title).blank? ? "MisterCocktail" : yield(:title) %></title>
+    <meta name="description" content="<%= (yield(:description) || '').squish %>">
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
@@ -13,26 +13,7 @@
   </head>
 
   <body>
-    <div class="navbar-wagon">
-      <!-- Logo -->
-      <%= link_to root_path, class: "navbar-wagon-brand" do %>
-        <%= image_tag "logo.png" %>
-      <% end %>
-      <!-- Right Navigation -->
-      <div class="navbar-wagon-right hidden-xs hidden-sm">
-        <!-- Button (call-to-action) -->
-        <%= link_to "Create cocktail", new_cocktail_path, class: "navbar-wagon-item navbar-wagon-button btn" %>
-      </div>
-      <!-- Dropdown list appearing on mobile only -->
-      <div class="navbar-wagon-item hidden-md hidden-lg">
-        <div class="dropdown">
-          <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
-          <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-            <li><%= link_to "Create cocktail", new_cocktail_path, class: "navbar-wagon-item navbar-wagon-button btn" %></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+  <%= render 'shared/navbar' %>
     <div class='container'>
       <%= yield %>
     </div>

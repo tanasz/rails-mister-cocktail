@@ -10,3 +10,15 @@
   </li>
   <% end %>
 </ul>
+
+
+<%#------- yield balise title -------%>
+<% content_for(:title) do %>All the cocktails are on MisterCocktail<% end %>
+
+<%#------- yield meta description -------%>
+<% content_for(:description) do %>
+All the cocktails are on MisterCocktail : discover the
+  <% for i in 1..10 do %>
+  <%= @cocktails.shuffle[i].name %>,
+  <% end %> and many more!
+<% end %>
