@@ -166,7 +166,7 @@
 
   100.times do
     dose = Dose.new(
-      description: "#{rand(2..4)} #{['cc', 'drops', 'teaspoons', 'bottles', 'crates', 'barrels'].sample} of ",
+      description: "#{rand(2..4)} #{['cc', 'hints', 'molecules', 'drops', 'dashes', 'teaspoons', 'bottles', 'crates', 'barrels'].sample} of ",
       )
     dose.ingredient = frigo.sample
     dose.cocktail = bar.sample
