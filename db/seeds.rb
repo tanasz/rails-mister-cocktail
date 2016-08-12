@@ -9,14 +9,14 @@ require "faker"
   Ingredient.destroy_all
   Dose.destroy_all
 
-  10.times do
+  50.times do
     ingredient = Ingredient.create(
       name: Faker::Hipster.words(3).join(' ').capitalize
     )
   end
   puts "ingredients créés !"
 
-  10.times do
+  50.times do
     cocktail = Cocktail.create(
       name: Faker::Beer.name
     )
@@ -27,7 +27,7 @@ require "faker"
   bar = Cocktail.all
   puts "frigo & bar créés !"
 
-  10.times do
+  100.times do
     dose = Dose.new(
       description: "#{rand(2..4)} #{['cc','dc','drops'].sample} of #{Faker::Lorem.word}",
       )

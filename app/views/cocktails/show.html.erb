@@ -1,9 +1,30 @@
 <h1><%= @cocktail.name %></h1>
 <hr>
+<%= render "doses/form", cocktail: @cocktail, dose: @dose %>
+
+
+<ul>
+  <% @cocktail.doses.each do |dose| %>
+    <li>
+      <%= dose.ingredient.name %>: <%= dose.description %>
+      <%= link_to "&times;".html_safe, dose_path(dose), method: :delete, data: { confirm: "Are you sure?" } %>
+    </li>
+  <% end %>
+</ul>
+
+
+
+
+<!--
 <% @cocktail.ingredients.each do |ingredient| %>
-<p><strong>Ingredient:</strong> <%= ingredient.name %></p>
+<p><strong>Ingredient:</strong> (<%= ingredient.id %>) <%= ingredient.name %> <%= ingredient.doses %> </p>
 <% end %>
 
-<% @cocktail.doses.each do |dose| %>
-<p><strong>Dose:</strong> <%= dose.description %></p>
-<% end %>
+
+<h2>
+  <%= @cocktail.name %>
+</h2> -->
+
+
+
+
