@@ -3,7 +3,6 @@
 # Examples:
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-require "faker"
 
   Cocktail.destroy_all
   Ingredient.destroy_all
@@ -167,7 +166,7 @@ require "faker"
 
   100.times do
     dose = Dose.new(
-      description: "#{rand(2..4)} #{['cc','dc','drops'].sample} of #{Faker::Lorem.word}",
+      description: "#{rand(2..4)} #{['cc', 'drops', 'teaspoons', 'bottles', 'crates', 'barrels'].sample} of ",
       )
     dose.ingredient = frigo.sample
     dose.cocktail = bar.sample
