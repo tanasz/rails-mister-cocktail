@@ -7,6 +7,7 @@ class DosesController < ApplicationController
     if @dose.save
       redirect_to @cocktail
     else
+      puts "dose pas sauvée!!!"
       render "cocktails/show"
     end
   end

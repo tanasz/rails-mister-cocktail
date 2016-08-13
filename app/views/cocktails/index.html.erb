@@ -5,9 +5,26 @@
     <span class='name'>Cocktail name</span>
   </li>
   <% @cocktails.each do |cocktail| %>
-  <li class='list-group-item'>
-    <span class='name'><%= link_to cocktail.name, cocktail_path(cocktail) %></span>
+
+<!--
+  <a href="" class='list-group-item clearfix'>
+    <span class='col-md-6'><%= link_to cocktail.name, cocktail_path(cocktail) %></span>
+    <span class='col-md-6'><%= cocktail.ingredients.count.to_s %></span>
   </li>
+ -->
+<%= link_to cocktail_path(cocktail), class: 'list-group-item clearfix' do %>
+  <span class='col-md-6'><%= cocktail.name %></span>
+  <span><%= cocktail.ingredients.count.to_s %></span>
+<% end %>
+
+
+
+<!--   <li class='list-group-item'>
+    <span class='name'><%= link_to cocktail.name, cocktail_path(cocktail) %></span>
+    <span class='ingredients'><%= cocktail.ingredients.count.to_s %></span>
+  </li>
+ -->
+
   <% end %>
 </ul>
 
@@ -20,9 +37,11 @@
 All the cocktails are on MisterCocktail!
   <% if @cocktails.length > 10 %>
     Discover the
-    <% c  =@cocktails.to_a.shuffle %>
-    <% for i in 0..10 do %>
-    <%= c[i].name %>,
+    <% c = @cocktails.to_a.shuffle.take(10) %>
+    <% c.each do |c| %>
+    <%= c.name %>,
     <% end %> and many more!
   <% end %>
 <% end %>
+
+

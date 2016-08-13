@@ -26,10 +26,10 @@
 <% content_for(:description) do %>
 The <%= @cocktail.name %> is on MisterCocktail : just add
   <% if @cocktail.ingredients.length > 1 %>
-    <% a = @cocktail.ingredients.to_a.shuffle! %>
-    <% for i in 0..3 do %>
-      <% if !a[i].name.nil? %>
-      <%= a[i].name %>,
+    <% a = @cocktail.ingredients.to_a.shuffle.take(3) %>
+    <% a.each do |a| %>
+      <% if !a.name.nil? %>
+      <%= a.name %>,
       <% end %>
     <% end %> and maybe more!
   <% else %>
