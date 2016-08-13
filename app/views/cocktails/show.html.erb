@@ -6,8 +6,9 @@
 
       <div class="row">
       <% @cocktail.doses.each do |dose| %>
+      <% if !dose.id.nil? %>
         <div class="col-xs-12 col-sm-4">
-          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('background.jpg');">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('backgroundeuh.jpg');">
             <div class="card-category">Ingredient</div>
             <div class="card-description">
               <h2><%= dose.ingredient.name %></h2>
@@ -17,6 +18,7 @@
           </div>
         </div>
       <% end %>
+      <% end %>
       </div>
 <%#------- yield balise title -------%>
 <% content_for(:title) do %><%= @cocktail.name %> on MisterCocktail<% end %>
@@ -24,10 +26,13 @@
 <% content_for(:description) do %>
 The <%= @cocktail.name %> is on MisterCocktail : just add
   <% if @cocktail.ingredients.length > 1 %>
-    <% for i in 0..2 do %>
-    <%= @cocktail.ingredients.shuffle[i].name %>,
+    <% a = @cocktail.ingredients.to_a.shuffle! %>
+    <% for i in 0..3 do %>
+      <% if !a[i].name.nil? %>
+      <%= a[i].name %>,
+      <% end %>
     <% end %> and maybe more!
   <% else %>
-  <%= "a few ingredients..." %>
+    <%= "a few ingredients..." %>
   <% end %>
 <% end %>

@@ -9,8 +9,8 @@ class CocktailsController < ApplicationController
     @cocktail = Cocktail.new
 
     @dose = Dose.new
-    @ingredients = Ingredient.all
-    @doses = Dose.all
+    # @ingredients = Ingredient.all
+    # @doses = Dose.all
   end
 
   def create
