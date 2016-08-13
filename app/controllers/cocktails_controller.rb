@@ -2,15 +2,12 @@ class CocktailsController < ApplicationController
   before_action :find_cocktail, only: [:show]
 
   def index
-    @cocktails = Cocktail.all
+    @cocktails = Cocktail.all.order(:name)
   end
 
   def new
     @cocktail = Cocktail.new
-
     @dose = Dose.new
-    # @ingredients = Ingredient.all
-    # @doses = Dose.all
   end
 
   def create
@@ -29,7 +26,7 @@ class CocktailsController < ApplicationController
   private
 
   def cocktail_params
-    params.require(:cocktail).permit(:name, :photo, :photo_cache)
+    params.require(:cocktail).permit(:name, :photo, :photo_cache, :description)
   end
 
   def find_cocktail

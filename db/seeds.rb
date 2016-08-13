@@ -74,87 +74,108 @@
   cocktails = [
     {
       name: "Old Fashioned",
-      photo: "http://www.seriouseats.com/images/2014/11/20141104-cocktail-party-old-fashioneds-holiday-vicky-wasik-3.jpg"
+      description: "The Old Fashioned cocktail is old-school but never out of fashion.",
+      photo: "http://res.cloudinary.com/tnsz/image/upload/v1471110616/cocktails/oldfashioned.jpg"
       },
     {
       name: "Daiquiri",
-      photo: "http://www.seriouseats.com/images/2015/03/20150323-cocktails-vicky-wasik-daiquiri.jpg"
+      description: "It’s easy to see why the dark rum-based Daiquiri is a classic. The perfectly balanced combination of sweet, sour and spirit is refreshing and tangy, but also quite simple to make at home. Try making the recipe below and add this fool-proof drink to your bartending arsenal.",
+      photo: "http://res.cloudinary.com/tnsz/image/upload/v1471110616/cocktails/daiquiri.jpg"
       },
     {
       name: "Margarita",
-      photo: "http://www.seriouseats.com/images/2015/03/20150323-cocktails-vicky-wasik-margarita.jpg"
+      description: "While the Margarita is one of the most popular cocktails in North America, its origins are shrouded in mystery. There are almost as many stories about who invented the margarita as there are margarita recipes. Some like them blended, others with a sweetener, but many argue the best margarita recipe is this classic one. Memorize it and you’ll never fail to impress.",
+      photo: "http://res.cloudinary.com/tnsz/image/upload/v1471110616/cocktails/margarita.jpg"
       },
     {
       name: "Sidecar",
-      photo: "http://www.seriouseats.com/images/2014/11/20141101-cognac-sidecar-carey-jones.jpg"
+      description: "This is one ride you’ll gladly give up the wheel for.",
+      photo: "http://res.cloudinary.com/tnsz/image/upload/v1471110616/cocktails/sidecar.jpg"
       },
     {
       name: "French 75",
-      photo: "http://www.seriouseats.com/images/2015/03/20150323-cocktails-vicky-wasik-french75.jpg"
+      description: "Possibly named for a World War I field gun, this classic drink packs a wallop.",
+      photo: "http://res.cloudinary.com/tnsz/image/upload/v1471110616/cocktails/french75.jpg"
       },
     {
       name: "Bloody Mary",
-      photo: "http://www.seriouseats.com/images/2015/03/twase-20150320-21.jpg"
+      description: "While the origin of this popular brunch cocktail is debatable, the Bloody Mary’s staying power leaves no question. The Bloody Mary is a vodka-soaked nutritional breakfast and hangover cure all in one. What else can you want?",
+      photo: "http://res.cloudinary.com/tnsz/image/upload/v1471110616/cocktails/bloodymary.jpg"
       },
     {
       name: "Irish Coffee",
-      photo: "http://www.seriouseats.com/images/2015/03/20150323-cocktails-vicky-wasik-irish-coffee.jpg"
+      description: "The secrets to making a great Irish Coffee are really so simple that they are often overlooked. This hot, creamy, classic Irish Coffee recipe from legendary bartender Dale DeGroff has all the right ingredients and will warm you to the bone.",
+      photo: "http://res.cloudinary.com/tnsz/image/upload/v1471110616/cocktails/irishcoffee.jpg"
       },
     {
       name: "Jack Rose",
-      photo: "http://www.seriouseats.com/images/2015/03/20150323-cocktails-vicky-wasik-jack-rose.jpg"
+      description: "The Jack Rose is smooth and sweetish - and deeply deceptive. Sipping it, you can't tell it contains liquor of any kind, let alone applejack. Ironic, that. The one classic cocktail to use New Jersey's indigenous firewater, and you can't even taste it.",
+      photo: "http://res.cloudinary.com/tnsz/image/upload/v1471110616/cocktails/jackrose.jpg"
       },
     {
       name: "Negroni",
-      photo: "http://www.seriouseats.com/images/2015/03/20150323-cocktails-vicky-wasik-negroni.jpg"
+      description: "The Negroni Cocktail is a classic Italian drink. Order a Negroni and you’ll be sure to Impress your bartender.",
+      photo: "http://res.cloudinary.com/tnsz/image/upload/v1471110616/cocktails/negroni.jpg"
       },
     {
       name: "Boulevardier",
-      photo: "http://www.seriouseats.com/images/2015/03/20150323-cocktails-vicky-wasik-boulevardier.jpg"
+      description: "Swap out the gin in a Negroni for rye whiskey and you get the delicious Boulevardier. It’s equally complex as its gin-based predecessor, but the whiskey adds warmth, making it perfect for autumn and winter drinking.",
+      photo: "http://res.cloudinary.com/tnsz/image/upload/v1471110616/cocktails/boulevardier.jpg"
       },
     {
       name: "Sazerac",
-      photo: "http://www.seriouseats.com/images/2015/03/20150323-cocktails-vicky-wasik-sazerac.jpg"
+      description: "Forget the Hurricane. The Sazerac is what you should drink in New Orleans. One of America’s earliest cocktails, the Sazerac is a homegrown New Orleans specialty. Peychaud’s Bitters are a key element and were created by Antoine Peychaud, a French Quarter pharmacist, who invented the cocktail in the 1830s. The Sazerac was originally made with cognac, but an insect epidemic destroyed many French vineyards and resulted in the lasting switch to rye whiskey.",
+      photo: "http://res.cloudinary.com/tnsz/image/upload/v1471110616/cocktails/sazerac.jpg"
       },
     {
       name: "Vieux Carré",
-      photo: "http://www.seriouseats.com/images/2015/03/20150323-cocktails-vicky-wasik-vieux-carre.jpg"
+      description: "The cognac-and-rye classic Vieux Carré cocktail was invented at New Orleans’ famed Carousel Bar.",
+      photo: "http://res.cloudinary.com/tnsz/image/upload/v1471110616/cocktails/vieuxcarre.jpg"
       },
     {
       name: "Ramos Gin Fizz",
-      photo: "http://www.seriouseats.com/images/2015/03/20150323-cocktails-robyn-lee-ramos-gin-fizz.jpg"
+      description: "Love the Tom Collins? Try its frothy, bubbly cousin, the Gin Fizz. The secret to creating the perfect creaminess and froth is to shake, shake, shake—and then shake some more.",
+      photo: "http://res.cloudinary.com/tnsz/image/upload/v1471110616/cocktails/ginfizz.jpg"
       },
     {
       name: "Mint Julep",
-      photo: "http://www.seriouseats.com/images/2015/03/20150323-cocktails-vicky-wasik-mint-julep.jpg"
+      description: "Celebrate Derby Day year-round with the Mint Julep, a classic bourbon refresher.",
+      photo: "http://res.cloudinary.com/tnsz/image/upload/v1471110616/cocktails/mintjulep.jpg"
       },
     {
       name: "Whiskey Sour",
-      photo: "http://www.seriouseats.com/images/2015/03/20150323-cocktails-vicky-wasik-whiskey-sour.jpg"
+      description: "The Whiskey Sour is one classic cocktail that won’t make you sour.",
+      photo: "http://res.cloudinary.com/tnsz/image/upload/v1471110616/cocktails/whiskeysour.jpg"
       },
     {
       name: "Mai Tai",
-      photo: "http://www.seriouseats.com/images/2015/03/20150323-cocktails-vicky-wasik-mai-tai.jpg"
+      description: "The Mai Tai is an original tiki classic that is neither neon-colored nor overly sweet. In Tahitian, “Mai Tai” means “The best—out of this world,” as exclaimed by the first person to taste Trader Vic’s original version. The iconic tiki drink was created to showcase the flavor of good quality rum, and should never be neon-colored or overly sweet. A proper Mai Tai is a deep amber hue and allows the rum to shine through.",
+      photo: "http://res.cloudinary.com/tnsz/image/upload/v1471110616/cocktails/maitai.jpg"
       },
     {
       name: "Planter's Punch",
-      photo: "http://www.seriouseats.com/images/2015/04/20150406-cocktails-planters-punch-robyn-lee-1.jpg"
+      description: "The Planter’s Punch is a classic but highly variable refresher that’ll have your mouth watering in seconds.",
+      photo: "http://res.cloudinary.com/tnsz/image/upload/v1471110616/cocktails/planterspunch.jpg"
       },
     {
       name: "Pisco Sour",
-      photo: "http://www.seriouseats.com/images/2015/03/20150323-cocktails-vicky-wasik-pisco-sour.jpg"
+      description: "Both Chile and Peru claim the classic Pisco Sour as their own.",
+      photo: "http://res.cloudinary.com/tnsz/image/upload/v1471110616/cocktails/piscosour.jpg"
       },
     {
       name: "Cosmopolitan",
-      photo: "http://www.seriouseats.com/images/2015/03/20150323-cocktails-vicky-wasik-cosmopolitan.jpg"
+      description: "The original Cosmopolitan was created by a South Beach bartender named Cheryl Cook. Eager to invent a new cocktail for the Martini glass, Cheryl riffed on the classic Kamikaze using a newly introduced citrus-flavored vodka plus a splash of cranberry juice. The rest is rose-hued history.",
+      photo: "http://res.cloudinary.com/tnsz/image/upload/v1471110616/cocktails/cosmopolitan.jpg"
       },
     {
       name: "Tom Collins",
-      photo: "http://www.seriouseats.com/images/2015/03/20150323-cocktails-vicky-wasik-tom-collins.jpg"
+      description: "The Tom Collins is essentially a sparkling lemonade spiked with a healthy dose of the juniper spirit. While there is a debate which side of the pond this drink was born, this cocktail lives up to his classic status with every sip.",
+      photo: "http://res.cloudinary.com/tnsz/image/upload/v1471110616/cocktails/tomcollins.jpg"
       },
     {
       name: "Last Word",
-      photo: "http://www.seriouseats.com/images/2015/03/20150323-cocktails-vicky-wasik-last-word.jpg"
+      description: "This complex, herbal cocktail will win any argument.",
+      photo: "http://res.cloudinary.com/tnsz/image/upload/v1471110616/cocktails/lastword.jpg"
     }
   ]
   cocktails.each { |cocktail| Cocktail.create(cocktail) }

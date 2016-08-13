@@ -13,8 +13,8 @@
   </li>
  -->
 <%= link_to cocktail_path(cocktail), class: 'list-group-item clearfix' do %>
-  <span class='col-md-6'><%= cocktail.name %></span>
-  <span><%= cocktail.ingredients.count.to_s %></span>
+  <span class='col-xs-5'><%= cocktail.name %></span>
+  <span class='col-xs-3'><%= cocktail.ingredients.count.to_s %></span>
 <% end %>
 
 
