@@ -1,0 +1,3 @@
+/db/images/bloodymary.jpg
+/db/images/boulevardier.jpg
+/db/images/cosmopolitan.jpg
